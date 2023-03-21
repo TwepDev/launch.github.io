@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: Install deps
         run: |
-          npm i
+          npm init
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:

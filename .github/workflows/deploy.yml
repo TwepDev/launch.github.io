@@ -16,7 +16,12 @@ jobs:
         run: |
           npm init -y
           npm install
+          git config --global user.name 'twepv2dev'
+          git config --global user.email 'twepv2dev@gmail.com'
+          git add package.json package-lock.json
+          git commit -am "Install deps"
           git push origin gh-pages
+
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:

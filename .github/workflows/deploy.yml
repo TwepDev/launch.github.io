@@ -15,7 +15,7 @@ jobs:
       - name: Install deps
         run: |
           npm init -y
-          npm install
+          npm install --save @actions/github
           git config --global user.name 'twepv2dev'
           git config --global user.email 'twepv2dev@gmail.com'
           git add package.json package-lock.json

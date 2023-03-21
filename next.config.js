@@ -10,12 +10,13 @@ if (isGithubActions) {
   basePath = `/${repo}`
 }
 
+// next.config.js
+const isProd = process.env.NODE_ENV === 'production'
+
 module.exports = {
-  assetPrefix: assetPrefix,
-  basePath: basePath,
+  assetPrefix: isProd ? '/launch.github.io/' : '',
   images: {
-    loader: 'imgix',
-    path: 'the "domain" of your Imigix source',
+    unoptimized: true,
   },
 }
 

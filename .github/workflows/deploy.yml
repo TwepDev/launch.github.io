@@ -21,8 +21,8 @@ jobs:
       - name: Build
         run: |
           npm ci
-          next build
-          next export
+          npx --no-install next build
+          npx --no-install next export
           touch out/.nojekyll
 
       - name: Deploy

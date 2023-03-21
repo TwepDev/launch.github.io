@@ -4,6 +4,8 @@
   "description": "",
   "main": "next.config.js",
   "scripts": {
+    "build": "next build",
+    "export": "next export",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

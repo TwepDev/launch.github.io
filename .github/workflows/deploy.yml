@@ -23,6 +23,15 @@ jobs:
           node-version: 16
           cache: npm
 
+      - name: Install deps
+        run: |
+          if [ -e yarn.lock ]; then
+          yarn install --frozen-lockfile
+          elif [ -e package-lock.json ]; then
+          npm ci
+          else
+          npm i
+          fi
       - name: Build
         run: |
           npm ci --legacy-peer-deps

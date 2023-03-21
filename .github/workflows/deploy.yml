@@ -12,37 +12,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-      - name: Install deps
-        run: |
-          npm init -y
-          npm install --save @actions/github
-          git config --global user.name 'twepv2dev'
-          git config --global user.email 'twepv2dev@gmail.com'
-          git add package.json package-lock.json
-          git commit -am "Install deps"
-          git push origin gh-pages
-
-      
+      - uses: actions/checkout@v3      
       - uses: actions/setup-node@v3
         with:
           node-version: 16
           cache: npm
 
-      - name: Install deps
-        run: |
-          if [ -e yarn.lock ]; then
-          yarn install --frozen-lockfile
-          elif [ -e package-lock.json ]; then
-          npm ci
-          else
-          npm i
-          fi
       - name: Build
         run: |
-          npm ci --legacy-peer-deps
-          npm run build
-          npm run export
+          npm ci
+          next build
+          next export
           touch out/.nojekyll
 
       - name: Deploy

@@ -22,8 +22,7 @@ jobs:
 
       - name: Build
         run: |
-          npm i
-          npm i next
+          npm i next react-toastify web3 @walletconnect reactstrap
           npm run build
           npm run export
 

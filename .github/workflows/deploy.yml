@@ -22,7 +22,7 @@ jobs:
 
       - name: Build
         run: |
-          npm install react-pro-sidebar react-paginate
+          npm install next-qrcode
           git config --global user.name "twepdev"
           git config --global user.email "twepv2dev@gmail.com"
           git add .

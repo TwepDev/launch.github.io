@@ -3,7 +3,7 @@ import Layout from '../component/Layout'
 import { useRouter } from "next/router";
 import "swiper/css";
 import "swiper/css/navigation";
-import '../public/css/style.css';
+//import '../public/css/style.css';
 import React, { useEffect, useState } from "react";
 import NextNProgress from 'nextjs-progressbar';
 import axios from "axios";

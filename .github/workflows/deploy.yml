@@ -22,7 +22,7 @@ jobs:
 
       - name: Build
         run: |
-        	npm install react-toastify web3 reactstrap
+          npm install react-toastify web3 reactstrap
           npm install @walletconnect/web3-provider
           git config --global user.name "twepdev"
           git config --global user.email "twepv2dev@gmail.com"

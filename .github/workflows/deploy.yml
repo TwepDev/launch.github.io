@@ -22,7 +22,8 @@ jobs:
 
       - name: Build
         run: |
-          npm install axios rot47
+          npm install @nivo
+          npm install react-pro-sidebar react-colorful react-datepicker
           git config --global user.name "twepdev"
           git config --global user.email "twepv2dev@gmail.com"
           git add .

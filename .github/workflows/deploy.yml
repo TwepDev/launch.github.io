@@ -22,7 +22,7 @@ jobs:
 
       - name: Build
         run: |
-          npm install next-qrcode
+          npm install react-pro-sidebar@0.7.1 react-youtube chart.js
           git config --global user.name "twepdev"
           git config --global user.email "twepv2dev@gmail.com"
           git add .

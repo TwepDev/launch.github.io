@@ -45,9 +45,8 @@ jobs:
           git add .
           git commit -m 'changed files'
           git push origin gh-pages
-				
-        	npm install next
           
+        	npm install next
           npm run build
           npm run export
 

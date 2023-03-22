@@ -22,8 +22,8 @@ jobs:
 
       - name: Build
         run: |
-          npm i next react-toastify web3 reactstrap
-          npm install @walletconnect/web3-provider
+          npm install @mui/material
+          npm install ethereum-blockies-base64 react-icons cookie-cutter
           npm run build
           npm run export
 

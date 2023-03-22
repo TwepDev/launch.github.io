@@ -23,7 +23,13 @@ jobs:
       - name: Build
         run: |
           npm config set legacy-peer-deps true
-          
+          npm install react-dom
+          git config --global user.name "twepdev"
+          git config --global user.email "twepv2dev@gmail.com"
+          git add .
+          git commit -m 'changed files'
+          git push origin gh-pages
+
 
           npm install next nextjs-progressbar next-qrcode
           npm run build

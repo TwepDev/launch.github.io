@@ -26,6 +26,8 @@ jobs:
           npm install @walletconnect/web3-provider
           npm install @mui/material
           npm install ethereum-blockies-base64 react-icons cookie-cutter
+          npm install react-pro-sidebar
+          git push origin gh-pages
           npm run build
           npm run export
 

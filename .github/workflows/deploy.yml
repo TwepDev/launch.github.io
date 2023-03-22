@@ -22,24 +22,7 @@ jobs:
 
       - name: Build
         run: |
-          npm install react-toastify web3 reactstrap
-          npm install @walletconnect/web3-provider
-          git config --global user.name "twepdev"
-          git config --global user.email "twepv2dev@gmail.com"
-          git add .
-          git commit -m 'changed files'
-          git push origin gh-pages
-
-          npm install @mui/material
-          npm install ethereum-blockies-base64 react-icons cookie-cutter
-          npm install react-pro-sidebar
-          git config --global user.name "twepdev"
-          git config --global user.email "twepv2dev@gmail.com"
-          git add .
-          git commit -m 'changed files'
-          git push origin gh-pages
-
-          npm install swiper react-perfect-scrollbar react-pro-sidebar
+          npm install axios rot47 @nivo nextjs-progressbar
           git config --global user.name "twepdev"
           git config --global user.email "twepv2dev@gmail.com"
           git add .

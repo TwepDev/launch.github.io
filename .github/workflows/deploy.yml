@@ -22,7 +22,7 @@ jobs:
 
       - name: Build
         run: |
-          npm i react-toastify web3 reactstrap
+        	npm install react-toastify web3 reactstrap
           npm install @walletconnect/web3-provider
           git config --global user.name "twepdev"
           git config --global user.email "twepv2dev@gmail.com"
@@ -45,7 +45,7 @@ jobs:
           git add .
           git commit -m 'changed files'
           git push origin gh-pages
-          
+
         	npm install next
           npm run build
           npm run export

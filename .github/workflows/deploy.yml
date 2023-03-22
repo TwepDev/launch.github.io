@@ -23,6 +23,7 @@ jobs:
       - name: Build
         run: |
           npm i
+          npm i next
           npm run build
           npm run export
 

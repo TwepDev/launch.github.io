@@ -5,7 +5,7 @@ import Web3 from "web3";
 import { presaleAdmin, IERC20, aggr } from "/components/web3/abi";
 import { detailsAbi } from "/components/web3/detailsAbi";
 import Overview from "../component/overview";
-import "react-multi-carousel/lib/styles.css";
+//import "react-multi-carousel/lib/styles.css";
 import { presaleView } from "/components/web3/presaleView";
 import { presaleFactory } from "../components/web3/abi";
 import { pinksaleAbi1, pinksaleAbi2 } from "../components/web3/pinksaleAbi";

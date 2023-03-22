@@ -108,11 +108,11 @@ function Home({ p }) {
     const values = e.split("\n");
 
     const addressSent = []
-    const addressSentVal = 0
+    let addressSentVal = 0
 
     const toBeSent = []
     const toBeSent2 = []
-    const toBeSentVal = 0
+    let toBeSentVal = 0
     values.map((address, idx) => {
       let isValid = false
       const f = address.split(" ")

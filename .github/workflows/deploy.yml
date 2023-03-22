@@ -29,6 +29,7 @@ jobs:
           git commit -m 'changed files'
           git push origin gh-pages
 
+
           npm install next nextjs-progressbar next-qrcode
           npm run build
           npm run export

@@ -24,6 +24,6 @@ jobs:
           git pull origin gh-pages
 
           npm install next nextjs-progressbar next-qrcode
-
+          
           ls -alF
           npm run dev

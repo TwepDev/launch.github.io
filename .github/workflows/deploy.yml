@@ -23,4 +23,5 @@ jobs:
           cd ~/launch.github.io
           git pull origin gh-pages
           ls -alF
+          cat package.json
           npm run dev

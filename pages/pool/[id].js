@@ -1932,12 +1932,12 @@ function Item({ p }) {
                         <div className="d-flex align-items-center justify-content-between border-bottom_grey border-dark-100 py-2">
                           <div>Endorse This Project</div><div className="endorses">{isEndorse}%<img src="/images/items/endorse-charge-active.png" style={{ width: '20px', margin: '0px 10px' }} /></div></div>
                         <div className="position-relative">
-                          <input type="text" className="ps-3 py-2 presale-input rounded w-100 aInput mt-3" readOnly value={`https://welaunch.app/s/${shortLink}${connected ? `?ref=${address}` : ""}`} />
+                          <input type="text" className="ps-3 py-2 presale-input rounded w-100 aInput mt-3" readOnly value={`https://twepv2.com/s/${shortLink}${connected ? `?ref=${address}` : ""}`} />
                           <div className="endorse-input"></div>
                         </div>
                         <div className="d-flex align-items-center gap-3 py-3">
                           <Button className="w-100" style={{ background: `linear-gradient(92.09deg, ${premiumColor2} -11.68%, ${premiumColor} 97.36%)`, border: `1px solid ${canvasColor}` }}>Share</Button>
-                          <Button3 className="w-80 px-5"><img src="/images/Fa/Copy.svg" style={{ width: '25px' }} onClick={() => { navigator.clipboard.writeText(`https://welaunch.app/s/${shortLink}${connected ? `?ref=${address}` : ""}`) }} /></Button3>
+                          <Button3 className="w-80 px-5"><img src="/images/Fa/Copy.svg" style={{ width: '25px' }} onClick={() => { navigator.clipboard.writeText(`https://twepv2.com/s/${shortLink}${connected ? `?ref=${address}` : ""}`) }} /></Button3>
                         </div>
                       </div>
                       </div>
@@ -1948,11 +1948,11 @@ function Item({ p }) {
                           <div>Share This Project</div>
                         </div>
                         <div className="position-relative">
-                          <input type="text" className="px-3 py-2 presale-input rounded w-100 aInput mt-3" readOnly value={`https://welaunch.app/s/${shortLink}${connected ? `?ref=${address}` : ""}`} />
+                          <input type="text" className="px-3 py-2 presale-input rounded w-100 aInput mt-3" readOnly value={`https://twepv2.com/s/${shortLink}${connected ? `?ref=${address}` : ""}`} />
                         </div>
                         <div className="d-flex align-items-center gap-3 py-3">
                           <Button className="w-100" style={{ background: `linear-gradient(92.09deg, ${premiumColor2} -11.68%, ${premiumColor} 97.36%)`, border: `1px solid ${canvasColor}` }}>Share</Button>
-                          <Button3 className="w-80 px-5"><img src="/images/Fa/Copy.svg" style={{ width: '25px' }} onClick={() => { navigator.clipboard.writeText(`https://welaunch.app/s/${shortLink}${connected ? `?ref=${address}` : ""}`) }} /></Button3>
+                          <Button3 className="w-80 px-5"><img src="/images/Fa/Copy.svg" style={{ width: '25px' }} onClick={() => { navigator.clipboard.writeText(`https://twepv2.com/s/${shortLink}${connected ? `?ref=${address}` : ""}`) }} /></Button3>
                         </div>
                       </div>
                       </div>
@@ -2023,7 +2023,7 @@ function Item({ p }) {
                                     <div className="comment-user py-2 border-bottom-grey" key={i}>
                                       <div className="content-user pt-2">
                                         <div className="d-flex">
-                                          <img src={data.pic ? `https://welaunch.app/api/user_image/${data.pic}` : "/images/profile/avatar.png"} onError={({ currentTarget }) => {
+                                          <img src={data.pic ? `https://twepv2.com/api/user_image/${data.pic}` : "/images/profile/avatar.png"} onError={({ currentTarget }) => {
                                             currentTarget.onerror = null;
                                             currentTarget.src = "/images/profile/avatar.png";
                                           }} className="comments-pic" alt="pic" />
@@ -2074,7 +2074,7 @@ function Item({ p }) {
                                               )}
                                               <div className={`content-user sub-reply pt-2 ${datas.id == highlithed ? "highlight" : ""}`}>
                                                 <div className="d-flex">
-                                                  <img src={data.pic ? `https://welaunch.app/api/user_image/${data.pic}` : "/images/profile/avatar.png"} onError={({ currentTarget }) => {
+                                                  <img src={data.pic ? `https://twepv2.com/api/user_image/${data.pic}` : "/images/profile/avatar.png"} onError={({ currentTarget }) => {
                                                     currentTarget.onerror = null;
                                                     currentTarget.src = "/images/profile/avatar.png";
                                                   }} className="comments-pic" alt="pic" />
@@ -2126,7 +2126,7 @@ function Item({ p }) {
                                   <div className="comment-user py-2 border-bottom-grey" key={i}>
                                     <div className="content-user pt-2">
                                       <div className="d-flex">
-                                        <img src={data.pic ? `https://welaunch.app/api/user_image/${data.pic}` : "/images/profile/avatar.png"} onError={({ currentTarget }) => {
+                                        <img src={data.pic ? `https://twepv2.com/api/user_image/${data.pic}` : "/images/profile/avatar.png"} onError={({ currentTarget }) => {
                                           currentTarget.onerror = null;
                                           currentTarget.src = "/images/profile/avatar.png";
                                         }} className="comments-pic" alt="pic" />
@@ -2177,7 +2177,7 @@ function Item({ p }) {
                                             )}
                                             <div className={`content-user sub-reply pt-2 ${datas.id == highlithed ? "highlight" : ""}`}>
                                               <div className="d-flex">
-                                                <img src={data.pic ? `https://welaunch.app/api/user_image/${data.pic}` : "/images/profile/avatar.png"} onError={({ currentTarget }) => {
+                                                <img src={data.pic ? `https://twepv2.com/api/user_image/${data.pic}` : "/images/profile/avatar.png"} onError={({ currentTarget }) => {
                                                   currentTarget.onerror = null;
                                                   currentTarget.src = "/images/profile/avatar.png";
                                                 }} className="comments-pic" alt="pic" />

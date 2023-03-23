@@ -3125,7 +3125,7 @@ function SettingsProfile({ p }) {
                           <div className="d-flex align-items-center justify-content-between border-bottom_grey border-dark-100 py-2">
                             <div>Endorse This Project</div><div className="endorses">{endorsePercent}%<img src="/images/items/endorse-charge-active.png" style={{ width: '20px', margin: '0px 10px' }} /></div></div>
                           <div className="position-relative">
-                            <input type="text" className="ps-3 py-2 presale-input rounded w-100 aInput mt-3" readOnly value={"https://welaunch.app/s/yourProject"} />
+                            <input type="text" className="ps-3 py-2 presale-input rounded w-100 aInput mt-3" readOnly value={"https://twepv2.com/s/yourProject"} />
                             <div className="endorse-input"></div>
                           </div>
                           <div className="d-flex align-items-center gap-3 py-3">
@@ -3141,7 +3141,7 @@ function SettingsProfile({ p }) {
                             <div>Share This Project</div>
                             </div>
                           <div className="position-relative">
-                            <input type="text" className="px-3 py-2 presale-input rounded w-100 aInput mt-3" readOnly value={`https://welaunch.app/s/yourProject`} />
+                            <input type="text" className="px-3 py-2 presale-input rounded w-100 aInput mt-3" readOnly value={`https://twepv2.com/s/yourProject`} />
                           </div>
                           <div className="d-flex align-items-center gap-3 py-3">
                             <Button className="w-100" style={{ background: `linear-gradient(92.09deg, ${premiumColor2} -11.68%, ${premiumColor} 97.36%)`, border: `1px solid ${canvasColor}` }}>Share</Button>

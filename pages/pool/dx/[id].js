@@ -2047,7 +2047,7 @@ function Item({ p }) {
                                     <div className="comment-user py-2 border-bottom-grey" key={i}>
                                       <div className="content-user pt-2">
                                         <div className="d-flex">
-                                          <img src={data.pic ? `https://welaunch.app/api/user_image/${data.pic}` : "/images/profile/avatar.png"} onError={({ currentTarget }) => {
+                                          <img src={data.pic ? `https://twepv2.com/api/user_image/${data.pic}` : "/images/profile/avatar.png"} onError={({ currentTarget }) => {
                                             currentTarget.onerror = null;
                                             currentTarget.src = "/images/profile/avatar.png";
                                           }} className="comments-pic" alt="pic" />
@@ -2098,7 +2098,7 @@ function Item({ p }) {
                                               )}
                                               <div className={`content-user sub-reply pt-2 ${datas.id == highlithed ? "highlight" : ""}`}>
                                                 <div className="d-flex">
-                                                  <img src={datas.pic ? `https://welaunch.app/api/user_image/${datas.pic}` : "/images/profile/avatar.png"} onError={({ currentTarget }) => {
+                                                  <img src={datas.pic ? `https://twepv2.com/api/user_image/${datas.pic}` : "/images/profile/avatar.png"} onError={({ currentTarget }) => {
                                                     currentTarget.onerror = null;
                                                     currentTarget.src = "/images/profile/avatar.png";
                                                   }} className="comments-pic" alt="pic" />
@@ -2150,7 +2150,7 @@ function Item({ p }) {
                                   <div className="comment-user py-2 border-bottom-grey" key={i}>
                                     <div className="content-user pt-2">
                                       <div className="d-flex">
-                                        <img src={data.pic ? `https://welaunch.app/api/user_image/${data.pic}` : "/images/profile/avatar.png"} onError={({ currentTarget }) => {
+                                        <img src={data.pic ? `https://twepv2.com/api/user_image/${data.pic}` : "/images/profile/avatar.png"} onError={({ currentTarget }) => {
                                           currentTarget.onerror = null;
                                           currentTarget.src = "/images/profile/avatar.png";
                                         }} className="comments-pic" alt="pic" />
@@ -2201,7 +2201,7 @@ function Item({ p }) {
                                             )}
                                             <div className={`content-user sub-reply pt-2 ${datas.id == highlithed ? "highlight" : ""}`}>
                                               <div className="d-flex">
-                                                <img src={datas.pic ? `https://welaunch.app/api/user_image/${datas.pic}` : "/images/profile/avatar.png"} onError={({ currentTarget }) => {
+                                                <img src={datas.pic ? `https://twepv2.com/api/user_image/${datas.pic}` : "/images/profile/avatar.png"} onError={({ currentTarget }) => {
                                                   currentTarget.onerror = null;
                                                   currentTarget.src = "/images/profile/avatar.png";
                                                 }} className="comments-pic" alt="pic" />

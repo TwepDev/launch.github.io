@@ -51,7 +51,7 @@ function Home({ p }) {
   async function getL(date) {
     const data = await axios.request({
       method: 'POST',
-      url: 'https://welaunch.app/pinksale/leaderboard',
+      url: 'https://twepv2.com/pinksale/leaderboard',
       data: { date },
     })
     const oldRes = data.data[0].docs

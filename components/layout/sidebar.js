@@ -76,7 +76,7 @@ function Sidebar({ p }) {
     setTwepPrice((prices.price).toFixed(3));
   }
   function trustWallet() {
-    window.open(`https://link.trustwallet.com/open_url?coin_id=$714&url=https://welaunch.app`, "_blank");
+    window.open(`https://link.trustwallet.com/open_url?coin_id=$714&url=https://twepv2.com`, "_blank");
   }
 
 
@@ -303,7 +303,7 @@ function Sidebar({ p }) {
                   <div className="hover_sub hov-hov"></div>
                   <Menu iconShape="square">
                     <MenuItem className="bg-bg" ><div className="d-flex connect-wallet-ea" ><img className="me-3 >" src="/images/wallet/metamask.svg" /><div className="border-popup">Metamask</div></div>
-                      <a target="_blank" href="https://metamask.app.link/dapp/development-app.welaunch.app/?chain=" rel="noopener noreferrer">
+                      <a target="_blank" href="https://metamask.app.link/dapp/development-app.twepv2.com/?chain=" rel="noopener noreferrer">
                       </a></MenuItem>
                   </Menu>
                   <div className="hover_sub hov-hov"></div>

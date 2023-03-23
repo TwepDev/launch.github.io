@@ -125,7 +125,7 @@ function Header({ p }) {
     if (paramChain) {
       // const options = {
       //   method: 'GET',
-      //   url: 'https://welaunch.app/trending?chain='+paramChain
+      //   url: 'https://twepv2.com/trending?chain='+paramChain
       // };
       // axios.request(options).then(function (response) {
       //   setTrending(response.data.trending);
@@ -135,7 +135,7 @@ function Header({ p }) {
       //   {
       //     const options = {
       //       method: 'GET',
-      //       url: 'https://welaunch.app/trending?chain='+paramChain
+      //       url: 'https://twepv2.com/trending?chain='+paramChain
       //     };
       //     axios.request(options).then(function (response) {
       //       setTrending(response.data.trending);
@@ -186,7 +186,7 @@ function Header({ p }) {
         } else {
           if (userData.user) {
             if (userData.user.pic != "") {
-              setUserProfile(`https://welaunch.app/api/user_image/${userData.user.pic}`)
+              setUserProfile(`https://twepv2.com/api/user_image/${userData.user.pic}`)
             } else {
               setUserProfile(image)
             }

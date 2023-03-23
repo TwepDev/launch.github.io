@@ -37,7 +37,7 @@ function ProfileMenu({p, uUname}) {
             setMesError("")
             const checkData = await uploadImage("updateImage", e[0]);
             if (checkData.status) {
-                setUserProfile(`https://welaunch.app/api/user_image/${checkData.user.pic}?update`)
+                setUserProfile(`https://twepv2.com/api/user_image/${checkData.user.pic}?update`)
                 setMesError("")
             } else {
                 setMesError(checkData.message)

@@ -18,10 +18,10 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        command_timeout: 10000m
         script: |
           ps -efw | grep "[n]pm run dev" | awk '{print $2}' | xargs kill
           ps -efw | grep "[n]ode" | awk '{print $2}' | xargs kill
+          rm -rf node_modules .npm package.json package-lock.json
           cd ~/launch.github.io
           git pull origin gh-pages
           ps
@@ -35,7 +35,8 @@ jobs:
         port: ${{ secrets.PORT }}
         command_timeout: 10000m
         script: |
+          cd ~/launch.github.io
           npm install next nextjs-progressbar next-qrcode
-          
+
           ls -alF
           npm run dev

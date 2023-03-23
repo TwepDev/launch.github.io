@@ -20,6 +20,7 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script: |
+        
           rm -rf launch.github.io
           git clone -b gh-pages TwepDev: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@github.com/TwepDev/launch.github.io.git
           cd ~/launch.github.io

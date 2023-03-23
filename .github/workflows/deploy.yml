@@ -27,8 +27,6 @@ jobs:
           npm install next nextjs-progressbar next-qrcode
           npm run build
           npm run export
-
-          echo "launch.twepv2.com" > CNAME
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

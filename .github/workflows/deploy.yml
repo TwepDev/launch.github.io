@@ -11,6 +11,21 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
+    - name: update
+      uses: appleboy/ssh-action@v0.1.8
+      with:
+        host: ${{ secrets.SERVER_IP }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: ${{ secrets.PORT }}
+        command_timeout: 10000m
+        script: |
+          ps -efw | grep "[n]pm run dev" | awk '{print $2}' | xargs kill
+          ps -efw | grep "[n]ode" | awk '{print $2}' | xargs kill
+          cd ~/launch.github.io
+          git pull origin gh-pages
+          ps
+
     - name: ssh
       uses: appleboy/ssh-action@v0.1.8
       with:
@@ -20,14 +35,7 @@ jobs:
         port: ${{ secrets.PORT }}
         command_timeout: 10000m
         script: |
-          ps
-          ps -efw | grep "[n]pm run dev" | awk '{print $2}' | xargs kill
-          ps -efw | grep "[n]ode" | awk '{print $2}' | xargs kill
-          cd ~/launch.github.io
-          git pull origin gh-pages
-
           npm install next nextjs-progressbar next-qrcode
-
-
+          
           ls -alF
           npm run dev

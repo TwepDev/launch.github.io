@@ -20,5 +20,6 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script: |
-          git clone -b gh-pages https://TwepDev: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@github.com/TwepDev/launch.github.io.git
+          cd ~/launch.github.io
+          npm install next react react-dom
           ls

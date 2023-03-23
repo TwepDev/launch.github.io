@@ -27,5 +27,6 @@ jobs:
 
           npm install next nextjs-progressbar next-qrcode
 
+          
           ls -alF
           npm run dev

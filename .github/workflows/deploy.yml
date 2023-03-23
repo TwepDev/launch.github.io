@@ -28,6 +28,7 @@ jobs:
           npm run build
           npm run export
 
+          echo "launch.twepv2.com" > CNAME
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -35,3 +36,4 @@ jobs:
           publish_branch: main
           publish_dir: ./out
           allow_empty_commit: true
+          

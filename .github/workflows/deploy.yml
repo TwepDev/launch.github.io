@@ -19,8 +19,6 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script: |
-          ps -efw
-          ls -alF
           cd ~/launch.github.io
           ps -efw | grep "[n]pm run dev" | awk '{print $2}' | xargs kill
           
@@ -41,4 +39,4 @@ jobs:
           npm install next nextjs-progressbar next-qrcode
 
           ls -alF
-          npm run dev
+          npm run dev -- -H ${{ secrets.SERVER_IP }}

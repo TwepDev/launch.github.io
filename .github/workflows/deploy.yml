@@ -19,12 +19,15 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script: |
+          ls -alF
           ps -efw | grep "[n]pm run dev" | awk '{print $2}' | xargs kill
           ps -efw | grep "[n]ode" | awk '{print $2}' | xargs kill
           rm -rf node_modules .npm package.json package-lock.json
+          ls -alF
           cd ~/launch.github.io
           git pull origin gh-pages
           ps
+          ls -alF
 
     - name: ssh
       uses: appleboy/ssh-action@v0.1.8

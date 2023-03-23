@@ -21,7 +21,7 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           rm -rf launch.github.io
-          git clone -b gh-pages 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@github.com/TwepDev/launch.github.io.git
+          git clone -b gh-pages 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@github.com/TwepDev/launch.github.io.git
           cd ~/launch.github.io
           git pull origin gh-pages
           ls -alF

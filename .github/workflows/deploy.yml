@@ -22,11 +22,12 @@ jobs:
         script: |
           ps
           ps -efw | grep "[n]pm run dev" | awk '{print $2}' | xargs kill
+          ps -efw | grep "[n]ode" | awk '{print $2}' | xargs kill
           cd ~/launch.github.io
           git pull origin gh-pages
 
           npm install next nextjs-progressbar next-qrcode
 
-          
+
           ls -alF
           npm run dev

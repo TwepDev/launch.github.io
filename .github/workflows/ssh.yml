@@ -1,0 +1,24 @@
+name: ssh
+
+on:
+  push:
+    branches:
+      - gh-pages
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: update
+      uses: appleboy/ssh-action@v0.1.8
+      with:
+        host: ${{ secrets.SERVER_IP }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: ${{ secrets.PORT }}
+        script: |
+          cd ~/launch.github.io          
+          git pull origin gh-pages
+          node trending.js
